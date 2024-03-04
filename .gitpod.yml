@@ -1,0 +1,2 @@
+tasks:
+  - init: cd gitpod-backstage && yarn install && yarn dev 
