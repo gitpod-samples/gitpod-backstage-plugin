@@ -14,6 +14,7 @@ export const ExampleComponent = () => {
       color="primary"
       href={gitpodUrl}
       target="_blank"
+      disabled={!repoUrl}
     >
       Open in Gitpod
     </Button>
