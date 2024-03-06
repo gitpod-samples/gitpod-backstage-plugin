@@ -7,6 +7,6 @@ createDevApp()
   .addPage({
     element: <MyPluginPage />,
     title: 'Root Page',
-    path: '/my-plugin'
+    path: '/gitpod'
   })
   .render();

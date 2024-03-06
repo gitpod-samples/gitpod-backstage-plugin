@@ -3,7 +3,7 @@ import { useEntity } from '@backstage/plugin-catalog-react';
 import { Button, Typography } from '@material-ui/core';
 import { InfoCard } from '@backstage/core-components';
 
-export const ExampleComponent = () => {
+export const GitpodButton = () => {
   const { entity } = useEntity();
 
   const repoUrl = entity.metadata.annotations?.['github.com/project-slug'];

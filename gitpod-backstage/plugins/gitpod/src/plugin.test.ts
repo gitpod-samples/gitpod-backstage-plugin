@@ -1,6 +1,6 @@
 import { myPluginPlugin } from './plugin';
 
-describe('my-plugin', () => {
+describe('gitpod', () => {
   it('should export plugin', () => {
     expect(myPluginPlugin).toBeDefined();
   });

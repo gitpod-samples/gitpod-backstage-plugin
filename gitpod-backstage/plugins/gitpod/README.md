@@ -1,12 +1,12 @@
-# my-plugin
+# gitpod
 
-Welcome to the my-plugin plugin!
+Welcome to the gitpod plugin!
 
 _This plugin was created through the Backstage CLI_
 
 ## Getting started
 
-Your plugin has been added to the example app in this repository, meaning you'll be able to access it by running `yarn start` in the root directory, and then navigating to [/my-plugin](http://localhost:3000/my-plugin).
+Your plugin has been added to the example app in this repository, meaning you'll be able to access it by running `yarn start` in the root directory, and then navigating to [/gitpod](http://localhost:3000/gitpod).
 
 You can also serve the plugin in isolation by running `yarn start` in the plugin directory.
 This method of serving the plugin provides quicker iteration speed and a faster startup and hot reloads.

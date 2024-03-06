@@ -3,7 +3,7 @@ import { createPlugin, createRoutableExtension } from '@backstage/core-plugin-ap
 import { rootRouteRef } from './routes';
 
 export const myPluginPlugin = createPlugin({
-  id: 'my-plugin',
+  id: 'gitpod',
   routes: {
     root: rootRouteRef,
   },
@@ -13,7 +13,7 @@ export const MyPluginPage = myPluginPlugin.provide(
   createRoutableExtension({
     name: 'MyPluginPage',
     component: () =>
-      import('./components/ExampleComponent').then(m => m.ExampleComponent),
+      import('./components/GitpodButton').then(m => m.GitpodButton),
     mountPoint: rootRouteRef,
   }),
 );
