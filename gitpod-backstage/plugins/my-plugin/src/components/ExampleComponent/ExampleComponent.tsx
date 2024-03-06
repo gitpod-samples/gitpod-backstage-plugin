@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEntity } from '@backstage/plugin-catalog-react';
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
+import { InfoCard } from '@backstage/core-components';
 
 export const ExampleComponent = () => {
   const { entity } = useEntity();
@@ -9,18 +10,19 @@ export const ExampleComponent = () => {
   const gitpodUrl = `https://gitpod.io/#https://github.com/${repoUrl}`;
 
   return (
-    <Button
-      variant="contained"
-      color="primary"
-      href={gitpodUrl}
-      target="_blank"
-      disabled={!repoUrl}
-    >
-      Open in Gitpod
-    </Button>
-           
-    );
+    <InfoCard title="Gitpod">
+      <Typography variant="body2" gutterBottom>
+        Quickly set up your development environment with <a href={gitpodUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>Gitpod</a>.
+      </Typography>
+      <Button
+        variant="contained"
+        color="primary"
+        href={gitpodUrl}
+        target="_blank"
+        disabled={!repoUrl}
+      >
+        Open in Gitpod
+      </Button>
+    </InfoCard>
+  );
 };
-
- 
-
