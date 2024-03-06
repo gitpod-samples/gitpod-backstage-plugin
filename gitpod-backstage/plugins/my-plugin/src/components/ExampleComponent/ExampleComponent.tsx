@@ -12,7 +12,7 @@ export const ExampleComponent = () => {
   return (
     <InfoCard title="Gitpod">
       <Typography variant="body2" gutterBottom>
-        Quickly set up your development environment with <a href={gitpodUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>Gitpod</a>.
+        Quickly set up your development environment with <strong><a href={gitpodUrl} target="_blank" rel="noopener noreferrer" >Gitpod</a>.</strong>
       </Typography>
       <Button
         variant="contained"
