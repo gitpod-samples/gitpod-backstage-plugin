@@ -1,10 +1,13 @@
-# Backstage Instance Test with Gitpod Plugin
+# gitpod
 
-This repository contains a test instance of Backstage that includes the Gitpod Backstage plugin. The Gitpod plugin allows users to easily launch a workspace directly from the Backstage interface.
+Welcome to the gitpod plugin!
 
-## To test
-1. Open in Gitpod
-2. Backstage instance should run
-3. Create a new app or add an existing catalog.yml
-4. Once imported, go to that page
-5. Click Open in Gitpod button
+_This plugin was created through the Backstage CLI_
+
+## Getting started
+
+Your plugin has been added to the example app in this repository, meaning you'll be able to access it by running `yarn start` in the root directory, and then navigating to [/gitpod](http://localhost:3000/gitpod).
+
+You can also serve the plugin in isolation by running `yarn start` in the plugin directory.
+This method of serving the plugin provides quicker iteration speed and a faster startup and hot reloads.
+It is only meant for local development, and the setup for it can be found inside the [/dev](./dev) directory.
