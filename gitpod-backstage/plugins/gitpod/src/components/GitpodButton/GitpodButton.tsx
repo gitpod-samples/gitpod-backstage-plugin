@@ -39,7 +39,7 @@ export const GitpodButton = () => {
       </Button>
       {!repoUrl ? (
         <Typography variant="body2" color="error" style={{ marginTop: '16px' }}>
-          You must configure a repository URL in your catalog file for this plugin to work. <Link href="https://link-to-docs" target="_blank" rel="noopener noreferrer">Read docs</Link>.
+          You must configure a repository URL in your catalog file for this plugin to work. <Link href="https://www.gitpod.io/docs/integrations/internal-developer-portals" target="_blank" rel="noopener noreferrer">Read docs</Link>.
         </Typography>
       ) : null}
     </InfoCard>
