@@ -1,1 +1,1 @@
-export { myPluginPlugin, MyPluginPage } from './plugin';
+export { GitpodPlugin, GitpodPage } from './plugin';
