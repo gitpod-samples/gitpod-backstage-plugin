@@ -1,10 +1,12 @@
 # Gitpod Backstage Plugin
 
-This is the official Backstage plugin for Gitpod. It integrates Gitpod's cloud development environments directly into Spotify's Backstage, allowing developers to manage and interact with Gitpod workspaces directly from their Backstage instance. This plugin aims to streamline the development workflow, making it easier for teams to access and manage their cloud-based development environments.
+The Gitpod Backstage Plugin is the official integration of Gitpod's cloud development environments into Spotify's Backstage. 
+
+It enables developers to start workspaces directly from their Backstage instance. This plugin aims to streamline the development workflow, providing teams with easy access and efficient management of their cloud development environments.
 
 ## Getting started
 
-To get started with the Gitpod plugin in your Backstage app, follow these installation steps:
+To get started with the Gitpod plugin in your Backstage app, follow these steps:
 
 1. **Install the plugin**:
 
@@ -29,8 +31,8 @@ const AppRoutes = () => (
 
 3. **Add the Gitpod component to a page in your app:**
 
-```
-import { GitpodButton } from '@gitpod-io/backstage-plugin-gitpo';
+```jsx 
+import { GitpodButton } from '@gitpod-io/backstage-plugin-gitpod';
 //....
 const HomePage = () => (
     // ...
@@ -50,12 +52,13 @@ gitpod:
   baseUrl: 'https://gitpod.io'
 ```
 
-## Links
-
-- [Backstage](https://backstage.io)
-- [Gitpod](https://www.gitpod.io)
-- [Learn more about Backstage plugins](https://backstage.io/docs/plugins/)
-
 ## Contributing
 
-We welcome contributions to the Gitpod Backstage plugin! Feel free to leave issues with feature requests or raise a pull request.
+We welcome contributions to the Gitpod Backstage plugin! If you have any feature requests or would like to raise a pull request, please feel free to leave an issue.
+
+## Links
+
+- [Gitpod](https://www.gitpod.io)
+- [Internal Developer Portals and Gitpod](https://www.gitpod.io/docs/integrations/internal-developer-portals)
+- [Backstage](https://backstage.io)
+- [Learn more about Backstage plugins](https://backstage.io/docs/plugins/)
