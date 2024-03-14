@@ -1,11 +1,11 @@
 import React from 'react';
 import { createDevApp } from '@backstage/dev-utils';
-import { GitpodPlugin, GitpodPage } from '../src/plugin';
+import { GitpodPlugin, Gitpod } from '../src/plugin';
 
 createDevApp()
   .registerPlugin(GitpodPlugin)
   .addPage({
-    element: <GitpodPage />,
+    element: <Gitpod />,
     title: 'Root Page',
     path: '/gitpod'
   })

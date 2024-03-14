@@ -9,9 +9,9 @@ export const GitpodPlugin = createPlugin({
   },
 });
 
-export const GitpodPage = GitpodPlugin.provide(
+export const Gitpod = GitpodPlugin.provide(
   createRoutableExtension({
-    name: 'GitpodPage',
+    name: 'Gitpod',
     component: () =>
       import('./components/GitpodButton').then(m => m.GitpodButton),
     mountPoint: rootRouteRef,
