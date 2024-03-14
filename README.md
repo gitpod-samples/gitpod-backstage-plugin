@@ -27,7 +27,7 @@ This is where you can configure what Gitpod deployment model you want to use (e.
 Once the plugin is installed, remember to add the GitpodButton component typically where you display information about your services or components. For example, in `EntityPage.tsx`:
 
 ```
-import { GitpodButton } from '@internal/backstage-plugin-gitpod';
+import { GitpodButton } from '@gitpod-io/backstage-plugin-gitpod';
 
 // Add <GitpodButton /> where it makes sense in your UI
 ```
