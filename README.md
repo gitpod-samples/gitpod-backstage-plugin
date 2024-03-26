@@ -15,21 +15,7 @@ To get started with the Gitpod plugin in your Backstage app, follow these steps:
 yarn add --cwd packages/app @gitpod-io/backstage-plugin-gitpod
 ```
 
-2. **Add the `/gitpod` route to your `App.tsx`**:
-
-```tsx
-// In packages/app/src/App.tsx
-import { Gitpod } from '@backstage/plugin-gitpod';
-
-const AppRoutes = () => (
-  <FlatRoutes>
-    {/* Other routes */}
-    <Route path="/gitpod" element={<Gitpod />} />
-  </FlatRoutes>
-);
-```
-
-3. **Add the Gitpod component to a page in your app:**
+2. **Add the Gitpod component to a page in your app:**
 
 ```jsx 
 import { GitpodButton } from '@gitpod-io/backstage-plugin-gitpod';
