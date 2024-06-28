@@ -1,12 +1,15 @@
 {
   "name": "@gitpod-io/backstage-plugin-gitpod",
-  "version": "0.1.7",
-  "main": "src/index.ts",
+  "version": "0.1.8",
+  "main": "dist/index.esm.js",
+  "module": "./dist/index.esm.js",
   "types": "dist/index.d.ts",
   "license": "Apache-2.0",
   "private": false,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "main": "dist/index.esm.js",
+    "types": "dist/index.d.ts"
   },
   "backstage": {
     "role": "frontend-plugin"
@@ -15,12 +18,14 @@
   "sideEffects": false,
   "scripts": {
     "start": "backstage-cli package start",
-    "build": "backstage-cli package build",
+    "build": "tsc && backstage-cli package build",
     "lint": "backstage-cli package lint",
     "test": "backstage-cli package test",
     "clean": "backstage-cli package clean",
     "prepack": "backstage-cli package prepack",
-    "postpack": "backstage-cli package postpack"
+    "postpack": "backstage-cli package postpack",
+    "tsc": "tsc",
+    "tsc:full": "tsc --skipLibCheck false --incremental false"
   },
   "dependencies": {
     "@backstage/core-components": "^0.14.0",
