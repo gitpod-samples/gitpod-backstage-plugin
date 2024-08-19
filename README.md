@@ -17,6 +17,8 @@ yarn add --cwd packages/app @gitpod/backstage-plugin-gitpod
 
 2. **Add the Gitpod component to a page in your app:**
 
+For instance, add it to `overviewContent` in `EntityPage.tsx`:
+
 ```jsx 
 import { GitpodButton } from '@gitpod/backstage-plugin-gitpod';
 //....
