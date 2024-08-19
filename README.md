@@ -12,7 +12,7 @@ To get started with the Gitpod plugin in your Backstage app, follow these steps:
 
 ```bash
 # From your Backstage root directory
-yarn add --cwd packages/app @gitpod-io/backstage-plugin-gitpod
+yarn add --cwd packages/app @gitpod/backstage-plugin-gitpod
 ```
 
 2. **Add the Gitpod component to a page in your app:**
