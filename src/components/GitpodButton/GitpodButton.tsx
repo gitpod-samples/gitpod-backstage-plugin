@@ -11,7 +11,7 @@ export const GitpodButton = () => {
   const githubRepo = entity.metadata.annotations?.['github.com/project-slug'];
   const gitlabRepo = entity.metadata.annotations?.['gitlab.com/project-slug'];
   const bitbucketRepo = entity.metadata.annotations?.['bitbucket.org/project-slug'];
-  const bitbucketServerRepo = entity.metadata.annotations?.['bitbucket-server/repo-url'];
+  const genericRepo = entity.metadata.annotations?.['repo-url'];
 
   // Construct the Gitpod URL based on the available repository information
   let gitpodUrl = '';
@@ -21,8 +21,8 @@ export const GitpodButton = () => {
     gitpodUrl = `${gitpodBaseUrl}#https://gitlab.com/${gitlabRepo}`;
   } else if (bitbucketRepo) {
     gitpodUrl = `${gitpodBaseUrl}#https://bitbucket.org/${bitbucketRepo}`;
-  } else if (bitbucketServerRepo) {
-    gitpodUrl = `${gitpodBaseUrl}#${bitbucketServerRepo}`;
+  } else if (genericRepo) {
+    gitpodUrl = `${gitpodBaseUrl}#${genericRepo}`;
   }
 
   return (
