@@ -18,7 +18,7 @@ yarn add --cwd packages/app @gitpod/backstage-plugin-gitpod
 2. **Add the Gitpod component to a page in your app:**
 
 ```jsx 
-import { GitpodButton } from '@gitpod-io/backstage-plugin-gitpod';
+import { GitpodButton } from '@gitpod/backstage-plugin-gitpod';
 //....
 const HomePage = () => (
     // ...
