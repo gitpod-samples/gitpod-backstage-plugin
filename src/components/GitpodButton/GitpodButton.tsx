@@ -22,8 +22,6 @@ export const GitpodButton = () => {
     gitpodUrl = `${gitpodBaseUrl}#https://bitbucket.org/${bitbucketRepo}`;
   }
 
-  const repoUrl = githubRepo || gitlabRepo || bitbucketRepo;
-
   return (
     <InfoCard title="Gitpod">
       <Typography variant="body2" gutterBottom>
@@ -34,11 +32,11 @@ export const GitpodButton = () => {
         color="primary"
         href={gitpodUrl}
         target="_blank"
-        disabled={!repoUrl}
+        disabled={!gitpodUrl}
       >
         Open in Gitpod
       </Button>
-      {!repoUrl ? (
+      {!gitpodUrl ? (
         <Typography variant="body2" color="error" style={{ marginTop: '16px' }}>
           You must configure a repository URL in your catalog file for this plugin to work. <Link href="https://www.gitpod.io/docs/integrations/internal-developer-portals" target="_blank" rel="noopener noreferrer">Read docs</Link>.
         </Typography>
