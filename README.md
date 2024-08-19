@@ -31,6 +31,15 @@ const HomePage = () => (
 );
 ```
 
+3. **Setup entity annotations**:
+
+Currently, the Gitpod Backstage plugin support importing the URL of the repository from the following [entity annotations](https://backstage.io/docs/features/software-catalog/descriptor-format#annotations-optional):
+
+- `github.com/project-slug`
+- `gitlab.com/project-slug`
+- `bitbucket.org/project-slug`
+- `repo-url` (for any repository defined by its full URL)
+
 4. **Configure the Gitpod URL**:
 
 Add your Gitpod URL to your `app-config.yaml` - this can either be Gitpod Cloud or Dedicated.
