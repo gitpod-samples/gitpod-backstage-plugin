@@ -2,7 +2,7 @@ import React from 'react';
 import { useEntity } from '@backstage/plugin-catalog-react';
 import { Button, Typography, Link } from '@material-ui/core';
 import { InfoCard } from '@backstage/core-components';
-import { useGitpodUrl } from '../../hooks/useGitpodUrl'; 
+import { useGitpodUrl } from '../../hooks/useGitpodUrl';
 
 export const GitpodButton = () => {
   const { entity } = useEntity();
@@ -15,14 +15,19 @@ export const GitpodButton = () => {
 
   // Construct the Gitpod URL based on the available repository information
   let gitpodUrl = '';
-  if (githubRepo) {
+  if (genericRepo) {
+    gitpodUrl = `${gitpodBaseUrl}#${genericRepo}`;
+  } else if (githubRepo) {
     gitpodUrl = `${gitpodBaseUrl}#https://github.com/${githubRepo}`;
   } else if (gitlabRepo) {
-    gitpodUrl = `${gitpodBaseUrl}#https://gitlab.com/${gitlabRepo}`;
+    const context = new URL(`https://gitlab.com/${gitlabRepo}`)
+    const customInstanceHost = entity.metadata.annotations?.["gitlab.com/instance"];
+    if (customInstanceHost) {
+      context.host = customInstanceHost;
+    }
+    gitpodUrl = `${gitpodBaseUrl}#${context}`;
   } else if (bitbucketRepo) {
     gitpodUrl = `${gitpodBaseUrl}#https://bitbucket.org/${bitbucketRepo}`;
-  } else if (genericRepo) {
-    gitpodUrl = `${gitpodBaseUrl}#${genericRepo}`;
   }
 
   return (
